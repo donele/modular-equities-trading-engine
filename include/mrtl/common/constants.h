@@ -1,0 +1,61 @@
+#ifndef _MRTL_CONSTANTS_H_
+#define _MRTL_CONSTANTS_H_
+
+#include <stdint.h>
+
+
+#define DEFAULT_ASK_PRICE 200000000000
+
+#define NANOSECONDS   1LL
+#define MICROSECONDS  (1000*NANOSECONDS)
+#define MILLISECONDS  (1000*MICROSECONDS)
+#define SECONDS       (1000*MILLISECONDS)
+#define MINUTES       (60*SECONDS)
+#define HOURS         (60*MINUTES)
+
+#define MAX_SYMBOLS (UINT16_MAX+1)
+#define MAX_SYMBOL_LENGTH 8
+#define MAX_UID_LENGTH 32
+#define MAX_MODEL_COUNT 8
+
+#define BPS 10000.
+
+#define BID_SIDE 0
+#define ASK_SIDE 1
+
+#define BUY 1
+#define SELL -1
+
+#define SPREAD_LIMIT 500.
+
+#define CASH_POSITION_INDEX -1
+
+#define AL_FLAGS_MULTI_FULL 0x1
+#define AL_FLAGS_MULTI_ORDER 0x4
+#define AL_FLAGS_KEEP_BEHIND 0x8
+#define AL_FLAGS_UNRESTRICTED 0x10
+#define AL_FLAGS_IGNORE_TK_THR 0x20
+#define AL_FLAGS_MULTI_MARKET 0x20
+#define AL_FLAGS_ONE_ACTIVE_PER_SIDE 0x40
+#define AL_FLAGS_ALLOW_JOIN 0x80
+
+#define ERROR_BAD_SAMPLE              -100
+#define ERROR_NO_SYMBOL_INFO          -101
+#define ERROR_FEATURE_NOT_FINITE      -102
+#define ERROR_TOO_MANY                -103
+#define ERROR_CANNOT_GET_BOOK         -104
+#define ERROR_BAD_MARKET_ID           -105
+#define ERROR_MARKET_DISABLED         -106
+#define ERROR_FILE_ERROR              -107
+#define ERROR_SPREAD_TOO_WIDE         -108
+#define ERROR_SPREAD_NEGATIVE         -109
+#define ERROR_SPREAD_ZERO             -110
+#define ERROR_BOOK_IS_MISSING_A_SIDE  -111
+#define ERROR_NO_STOCKCHARACTERISTICS -112
+#define ERROR_BAD_SYMBOL              -113
+#define ERROR_NOT_IN_UNIVERSE         -114
+#define ERROR_BAD_FILL                -115
+#define ERROR_BAD_SIDE                -116
+
+#endif  // _MRTL_CONSTANTS_H_
+

@@ -1,0 +1,9 @@
+#ifndef _MRTL_CLASSIC_MISC_H_
+#define _MRTL_CLASSIC_MISC_H_
+
+#define SAMPLE_SPREAD_LIMIT 200.
+#define MIN_MED_MED_SPRD .00008
+#define MAX_MED_MED_SPRD .02
+
+#endif
+
