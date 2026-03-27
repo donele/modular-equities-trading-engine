@@ -30,8 +30,8 @@ The file `mrtl.txt` appears to be a historical dump of expected paths/content an
 graph TD
     MBP[Market Data Feed / mbpsig callbacks]
     LOADER[load_agent_library.c\nmbp_sigalloc_i / mbp_sigcall_i]
-    AGENT[sampler | simulator | live]
-    STRATLIB[Strategy .so\nclassic | momentum_sieve]
+    AGENT["sampler, simulator, live"]
+    STRATLIB["Strategy .so\nclassic, momentum_sieve"]
     COMMON[mrtl_common\n(types, tasks, country, db loaders)]
     MART[MART model runtime\n(LightGBM text parser)]
     DB[(cfgdb/sidb + hfstock/equitydata DB)]
