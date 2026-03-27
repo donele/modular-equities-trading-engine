@@ -28,14 +28,14 @@ The file `mrtl.txt` appears to be a historical dump of expected paths/content an
 
 ```mermaid
 graph TD
-    MBP[Market Data Feed / mbpsig callbacks]
-    LOADER[load_agent_library.c\nmbp_sigalloc_i / mbp_sigcall_i]
+    MBP["Market data feed and mbpsig callbacks"]
+    LOADER["load_agent_library.c\nmbp_sigalloc_i and mbp_sigcall_i"]
     AGENT["sampler, simulator, live"]
-    STRATLIB["Strategy .so\nclassic, momentum_sieve"]
-    COMMON[mrtl_common\n(types, tasks, country, db loaders)]
-    MART[MART model runtime\n(LightGBM text parser)]
-    DB[(cfgdb/sidb + hfstock/equitydata DB)]
-    OUT[(output files)]
+    STRATLIB["Strategy shared library\nclassic and momentum_sieve"]
+    COMMON["mrtl_common\ntypes, tasks, country, db loaders"]
+    MART["MART model runtime\nLightGBM text parser"]
+    DB["cfgdb/sidb and hfstock/equitydata DB"]
+    OUT["output files"]
 
     MBP --> LOADER
     LOADER --> AGENT
